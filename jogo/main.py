@@ -14,7 +14,7 @@ def sortear_nome():
 
 sorte = sortear_nome()
 cor_texto = (255, 255, 255)
-tela = pygame.display.set_mode((900, 700))
+tela = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("Sorteio da sorte!")
 fonte = pygame.font.Font(None, 76)
 texto = fonte.render(sorte, True, cor_texto)
@@ -28,7 +28,7 @@ while gameloop:
             sorte = sortear_nome()
             texto = fonte.render(sorte, True, cor_texto)
     tela.fill("purple")
-    posicao_texto = texto.get_rect(center=(900 //2, 700 //2))
+    posicao_texto = texto.get_rect(center=(800 //2, 600 //2))
     tela.blit(texto, posicao_texto)
     pygame.display.flip()
 
