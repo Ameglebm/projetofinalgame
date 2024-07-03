@@ -8,4 +8,3 @@ Projeto final da primeira fase de ADS
     pagina de cadastro = para cadastrar o cliente
     login = pagina de login
     pagina do jogo = aonde vai ficar o jogo formato largura 800 e altura 600
-    
