@@ -28,7 +28,7 @@ lista = ["amar", "azul", "acordado", "amargura", "assistir", "apetecer", "ascend
     "hospício", "hansa", "herdar", "hibridismo", "hotel", "honroso", "hereditariedade", "hilariante", 
     "honorável", "hostilizado", "homizio", "hiância", "imanente", "insípido", "indiferença", 
     "intrínseca", "interesse", "instância", "insano", "intersecção", "intempestivo", "instável", 
-    "idiossincrático", "intolerância", "inútil", "inevitável", "impor", "imiscuir", 
+    "idiossincrático", "intolerância", "inútil", "inevitável", "impor", "imiscuir", "interdependência", 
     "imperativo", "intervir", "incrédulo", "indissociável", "imaginação", "imagem", "inescrupuloso", 
     "ilusão", "injúria", "insolência", "ilustre", "jazigo", "jactar", "jogo", "jovialidade", 
     "justa", "justificação", "justaposto", "jamanta", "judiação", "jesuíta", "jazida", "javé", 

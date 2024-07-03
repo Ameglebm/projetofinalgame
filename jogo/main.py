@@ -170,8 +170,7 @@ while gameloop:
     elif len(letras_erradas) >= 6:
         texto_derrota = fonte_pequena.render(f"Você Perdeu! Era: {sorte}", True, cor_texto)
         tela.blit(texto_derrota, (500 - texto_derrota.get_width() // 2, 250))
-        
-    
+   
     pygame.display.flip()
 
 pygame.quit()
