@@ -93,6 +93,7 @@ lista = ["amar", "azul", "acordado", "amargura", "assistir", "apetecer", "ascend
     "xicara", "xilogravura", "xilofone", "xiririca", "xixi", "xodó", "xucro", "xuxu", "zoada", "zombar", 
     "zoológico", "zoom", "zoonomia", "zoomorfismo", "zorra", "zulu", "zumbido", "zumbi", "zumbir", "zuílo", "zulu", "zumbi", "zunir", "zunzum", "zunzunzum", "zuízo", "zúrico", "zuzum", "zíper", "zózimo", "zuísmo", "zuíz", "zóxis", "zuízo", "zíper", "zoada", "zoa", "zoada", "zoada", "zoada", "zoada", "zoada", "zoada"]
 
+contador = 0
 def sortear_nome():
     return random.choice(lista).upper()
 
@@ -107,7 +108,7 @@ tela = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("Jogo da Forca!")
 fonte = pygame.font.Font(None, 58)
 fonte_pequena = pygame.font.Font(None, 34)
-fonte_media = pygame.font.Font(None, 56)
+fonte_media = pygame.font.Font(None, 52)
 
 def desenhar_forca(tela, erros):
     # Desenhando a estrutura da forca
