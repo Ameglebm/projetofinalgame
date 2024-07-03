@@ -1,5 +1,7 @@
 /* para tirar a margem do body */
-body { background-image: ;
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
 }
 
 .container-nav{
@@ -59,7 +61,8 @@ body { background-image: ;
 .main-login{
     width: 100vw;
     height: 100vh;
-    background-color: #08090D;
+    background-image: url(./images/fundo-espaco.jpg);
+    background-size: 100%;
     display: flex;    
     justify-content: center;
     align-items: center;
