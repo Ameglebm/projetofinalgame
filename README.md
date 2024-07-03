@@ -6,8 +6,14 @@ Projeto final da primeira fase de ADS
 <!-- Testar se esta rodando na web -->
 
 2°
-Criar o jogo
-Testar pra ver se ele roda online
+<!-- Criar o jogo -->
+<!-- Testar pra ver se ele roda online -->
+Acertar as letras com acento para nao dar bug
+Colocar um botao de play
+Colocar contagem de vezes que ganhou!
+Colocar botao de tente novamente voltando ao zero pontos(inicio)
+Colocar um limitador de quantas vezes pode errar, maximo 6 vezes
+Acertar os erros, tirar os bugs
 
 3°
 Criar a pasta venv para incrementar o django

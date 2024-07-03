@@ -139,7 +139,7 @@ def mostrar_palavra(tela, palavra, letras_acertadas):
         else:
             exibicao += "_ "
     texto = fonte.render(exibicao, True, cor_texto)
-    tela.blit(texto, (500 - texto.get_width() // 2, 450))  # Abaixo da força
+    tela.blit(texto, (500 - texto.get_width() // 2, 467))  # Abaixo da força
 
 def mostrar_letras_erradas(tela, letras_erradas):
     texto = fonte_pequena.render("Erros: " + ", ".join(letras_erradas), True, cor_texto)
