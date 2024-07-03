@@ -1,9 +1,3 @@
-import pygame
-import random
-
-pygame.init()
-pygame.font.init()
-
 lista = ["amar", "azul", "acordado", "amargura", "assistir", "apetecer", "ascender", "arrojado", 
     "aprender", "alcançar", "atribuir", "anarquia", "amistoso", "arretado", "ajudante", 
     "atraente", "apoteose", "atrofiar", "adiantar", "arrancar", "afrontar", "abestado", 
@@ -93,84 +87,7 @@ lista = ["amar", "azul", "acordado", "amargura", "assistir", "apetecer", "ascend
     "xicara", "xilogravura", "xilofone", "xiririca", "xixi", "xodó", "xucro", "xuxu", "zoada", "zombar", 
     "zoológico", "zoom", "zoonomia", "zoomorfismo", "zorra", "zulu", "zumbido", "zumbi", "zumbir", "zuílo", "zulu", "zumbi", "zunir", "zunzum", "zunzunzum", "zuízo", "zúrico", "zuzum", "zíper", "zózimo", "zuísmo", "zuíz", "zóxis", "zuízo", "zíper", "zoada", "zoa", "zoada", "zoada", "zoada", "zoada", "zoada", "zoada"]
 
-def sortear_nome():
-    return random.choice(lista).upper()
-
-sorte = sortear_nome()
-letras_acertadas = []
-letras_erradas = []
-
-cor_texto = (255, 255, 255)
-cor_fundo = (75, 0, 130)
-
-tela = pygame.display.set_mode((800, 600))
-pygame.display.set_caption("Jogo da Forca!")
-fonte = pygame.font.Font(None, 58)
-fonte_pequena = pygame.font.Font(None, 34)
-fonte_media = pygame.font.Font(None, 56)
-
-def desenhar_forca(tela, erros):
-    # Desenhando a estrutura da forca
-    base_x, base_y = 20, 500
-    pygame.draw.line(tela, cor_texto, (base_x, base_y), (base_x + 200, base_y), 6)
-    pygame.draw.line(tela, cor_texto, (base_x + 100, base_y), (base_x + 100, base_y - 400), 10)
-    pygame.draw.line(tela, cor_texto, (base_x + 100, base_y - 400), (base_x + 250, base_y - 400), 10)
-    pygame.draw.line(tela, cor_texto, (base_x + 250, base_y - 400), (base_x + 250, base_y - 350), 10)
-
-    if erros > 0:
-        pygame.draw.circle(tela, cor_texto, (base_x + 250, base_y - 320), 30, 10) # Cabeça
-    if erros > 1:
-        pygame.draw.line(tela, cor_texto, (base_x + 250, base_y - 290), (base_x + 250, base_y - 200), 10) # Tronco
-    if erros > 2:
-        pygame.draw.line(tela, cor_texto, (base_x + 250, base_y - 250), (base_x + 200, base_y - 300), 10) # Braço esquerdo
-    if erros > 3:
-        pygame.draw.line(tela, cor_texto, (base_x + 250, base_y - 250), (base_x + 300, base_y - 300), 10) # Braço direito
-    if erros > 4:
-        pygame.draw.line(tela, cor_texto, (base_x + 250, base_y - 200), (base_x + 200, base_y - 150), 10) # Perna esquerda
-    if erros > 5:
-        pygame.draw.line(tela, cor_texto, (base_x + 250, base_y - 200), (base_x + 300, base_y - 150), 10) # Perna direita
-
-def mostrar_palavra(tela, palavra, letras_acertadas):
-    exibicao = ""
-    for letra in palavra:
-        if letra in letras_acertadas:
-            exibicao += letra + " "
-        else:
-            exibicao += "_ "
-    texto = fonte.render(exibicao, True, cor_texto)
-    tela.blit(texto, (500 - texto.get_width() // 2, 450))  # Abaixo da força
-
-def mostrar_letras_erradas(tela, letras_erradas):
-    texto = fonte_pequena.render("Erros: " + ", ".join(letras_erradas), True, cor_texto)
-    tela.blit(texto, (10, 10))
-
-gameloop = True
-while gameloop:
-    tela.fill(cor_fundo)
-    
-    for evento in pygame.event.get():
-        if evento.type == pygame.QUIT:
-            gameloop = False
-        elif evento.type == pygame.KEYDOWN:
-            letra = evento.unicode.upper()
-            if letra.isalpha() and len(letra) == 1:
-                if letra in sorte and letra not in letras_acertadas:
-                    letras_acertadas.append(letra)
-                elif letra not in sorte and letra not in letras_erradas:
-                    letras_erradas.append(letra)
-    
-    mostrar_palavra(tela, sorte, letras_acertadas)
-    mostrar_letras_erradas(tela, letras_erradas)
-    desenhar_forca(tela, len(letras_erradas))
-
-    if set(sorte) <= set(letras_acertadas):
-        texto_vitoria = fonte_media.render("Você Venceu!", True, cor_texto)
-        tela.blit(texto_vitoria, (500 - texto_vitoria.get_width() // 2, 300))
-    elif len(letras_erradas) >= 6:
-        texto_derrota = fonte_pequena.render(f"Você Perdeu! Era: {sorte}", True, cor_texto)
-        tela.blit(texto_derrota, (500 - texto_derrota.get_width() // 2, 250))
-        
-    
-    pygame.display.flip()
-
-pygame.quit()
+menor = min(lista, key=len)
+maior = max(lista, key=len)
+print(menor)
+print(maior)
