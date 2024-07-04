@@ -24,4 +24,3 @@ Adicionar apps no django
 
 4°
 Criar banco de dados integrado com django
-Atualizar builds e apps integrados no django e realizar testes
