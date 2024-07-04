@@ -122,11 +122,11 @@ while gameloop:
             estado_jogo = "derrota"
     elif estado_jogo == "vitoria":
         texto_vitoria = fonte_media.render("Você Venceu!", True, cor_texto)
-        tela.blit(texto_vitoria, (500 - texto_vitoria.get_width() // 2, 300))
+        tela.blit(texto_vitoria, (400 - texto_vitoria.get_width() // 2, 250))
         desenhar_botao(tela, "Continuar", 300, 350, 200, 60)
     elif estado_jogo == "derrota":
         texto_derrota = fonte_pequena.render(f"Você Perdeu! Era: {sorte}", True, cor_texto)
-        tela.blit(texto_derrota, (500 - texto_derrota.get_width() // 2, 250))
+        tela.blit(texto_derrota, (400 - texto_derrota.get_width() // 2, 250))
         desenhar_botao(tela, "Tente Novamente", 300, 350, 200, 60)
     
     pygame.display.flip()
