@@ -134,6 +134,7 @@ while gameloop:
         texto_pontos = fonte_pequena.render(f"Pontos: {contador}", True, cor_texto)
 
         tela.blit(texto_pontos, (350, 350))
+        
     elif estado_jogo == "perdeu":
         texto_derrota = fonte_pequena.render(f"Você Perdeu! Era: {sorte}", True, cor_texto)
         tela.blit(texto_derrota, (400 - texto_derrota.get_width() // 2, 250))
