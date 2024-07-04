@@ -14,6 +14,7 @@ Projeto final da primeira fase de ADS
 <!-- Colocar botao de tente novamente voltando ao zero pontos(inicio) -->
 <!-- Colocar um limitador de quantas vezes pode errar, maximo 6 vezes -->
 <!-- Acertar os erros, tirar os bugs -->
+<!-- Testado na main e esta tudo funcionando sem bugs tanto no ambiente quanto na web -->
 
 3°
 Criar a pasta venv para incrementar o django
