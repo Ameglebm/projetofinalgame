@@ -110,6 +110,9 @@ fonte = pygame.font.Font(None, 58)
 fonte_pequena = pygame.font.Font(None, 34)
 fonte_media = pygame.font.Font(None, 52)
 
+estado_jogo = "menu"
+pontos = 0
+
 def desenhar_forca(tela, erros):
     # Desenhando a estrutura da forca
     base_x, base_y = 20, 500
@@ -145,6 +148,17 @@ def mostrar_letras_erradas(tela, letras_erradas):
     texto = fonte_pequena.render("Erros: " + ", ".join(letras_erradas), True, cor_texto)
     tela.blit(texto, (10, 10))
 
+def desenhar_botao(tela, texto, x, y, largura, altura):
+    pygame.draw.rect(tela, (0, 0, 0), (x, y, largura, altura))
+    pygame.draw.rect(tela, cor_texto, (x+2, y+2, largura-4, altura-4))
+    texto_botao = fonte_pequena.render(texto, True, (0, 0, 0))
+    tela.blit(texto_botao, (x + (largura - texto_botao.get_width()) // 2, y + (altura - texto_botao.get_height()) // 2))
+
+def verificar_clique(x, y, largura, altura, pos):
+    if x < pos[0] < x + largura and y < pos[1] < y + altura:
+        return True
+    return False
+
 gameloop = True
 while gameloop:
     tela.fill(cor_fundo)
@@ -152,25 +166,56 @@ while gameloop:
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
             gameloop = False
-        elif evento.type == pygame.KEYDOWN:
+        elif evento.type == pygame.KEYDOWN and estado_jogo == "jogando":
             letra = evento.unicode.upper()
             if letra.isalpha() and len(letra) == 1:
                 if letra in sorte and letra not in letras_acertadas:
                     letras_acertadas.append(letra)
                 elif letra not in sorte and letra not in letras_erradas:
                     letras_erradas.append(letra)
-    
-    mostrar_palavra(tela, sorte, letras_acertadas)
-    mostrar_letras_erradas(tela, letras_erradas)
-    desenhar_forca(tela, len(letras_erradas))
+        elif evento.type == pygame.MOUSEBUTTONDOWN and estado_jogo == "menu":
+            if verificar_clique(300, 250, 200, 60, evento.pos):
+                estado_jogo = "jogando"
+                sorte = sortear_nome()
+                letras_acertadas = []
+                letras_erradas = []
+        elif evento.type == pygame.MOUSEBUTTONDOWN and estado_jogo == "vitoria":
+            if verificar_clique(300, 350, 200, 60, evento.pos):
+                estado_jogo = "jogando"
+                sorte = sortear_nome()
+                letras_acertadas = []
+                letras_erradas = []
+                pontos += 1
+        elif evento.type == pygame.MOUSEBUTTONDOWN and estado_jogo == "derrota":
+            if verificar_clique(300, 350, 200, 60, evento.pos):
+                estado_jogo = "jogando"
+                sorte = sortear_nome()
+                letras_acertadas = []
+                letras_erradas = []
+                pontos = 0
 
-    if set(sorte) <= set(letras_acertadas):
+    if estado_jogo == "menu":
+        desenhar_botao(tela, "Play", 300, 250, 200, 60)
+    elif estado_jogo == "jogando":
+        mostrar_palavra(tela, sorte, letras_acertadas)
+        mostrar_letras_erradas(tela, letras_erradas)
+        desenhar_forca(tela, len(letras_erradas))
+        texto_pontos = fonte_pequena.render(f"Pontos: {pontos}", True, cor_texto)
+        tela.blit(texto_pontos, (650, 10))
+        
+        if set(sorte) <= set(letras_acertadas):
+            estado_jogo = "vitoria"
+        elif len(letras_erradas) >= 6:
+            estado_jogo = "derrota"
+    elif estado_jogo == "vitoria":
         texto_vitoria = fonte_media.render("Você Venceu!", True, cor_texto)
-        tela.blit(texto_vitoria, (500 - texto_vitoria.get_width() // 2, 300))
-    elif len(letras_erradas) >= 6:
+        tela.blit(texto_vitoria, (400 - texto_vitoria.get_width() // 2, 250))
+        desenhar_botao(tela, "Continuar", 300, 350, 200, 60)
+    elif estado_jogo == "derrota":
         texto_derrota = fonte_pequena.render(f"Você Perdeu! Era: {sorte}", True, cor_texto)
-        tela.blit(texto_derrota, (500 - texto_derrota.get_width() // 2, 250))
-   
+        tela.blit(texto_derrota, (400 - texto_derrota.get_width() // 2, 250))
+        desenhar_botao(tela, "Tente Novamente", 300, 350, 200, 60)
+    
     pygame.display.flip()
 
 pygame.quit()
