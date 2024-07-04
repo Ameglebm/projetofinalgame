@@ -166,3 +166,8 @@ body {
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #6E7371;
 }
+
+.btn-login:hover{
+    background-color: #d2d6cf;
+    padding: 20px 0px;
+}
