@@ -36,6 +36,7 @@ Projeto final da primeira fase de ADS
 <!-- Branchs apagadas alisson e davi-->
 <!-- Criada a branch DevAmeglee -->
 <!-- Criada a branch DevDaviii -->
+<!-- Criada nova branch DevDavi -->
 5°
 Organizar as paginas index para aparecer nas views
 arrumar as models
