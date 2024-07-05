@@ -34,6 +34,7 @@ Projeto final da primeira fase de ADS
 <!-- Criar banco de dados integrado com django -->
 <!-- Comunicando o banco de dados com o servidor django -->
 <!-- Branchs apagadas alisson e davi-->
+<!-- Branch criada novamente -->
 5°
 Organizar as paginas index para aparecer nas views
 arrumar as models
