@@ -1,0 +1,173 @@
+/* para tirar a margem do body */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+.container-nav{
+    background-color: #08090D;
+    display: flex;
+    justify-content: space-between;
+    height: 3.5em;
+    font-weight: 500;
+}
+
+.navbar-more{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-link{
+    color: #F7F2ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.navbar-link:hover{
+    background-color: #F7F2ED;
+    color: #08090D;
+}
+
+.navbar-play{   
+    width: 20%;  
+}
+
+.navbar-button{
+    color: #F7F2ED;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-button:hover{
+    background-color: #F7F2ED;
+    color: #08090D;
+}
+
+/* width e height mostra quanto vai ocupar da tela, vh para o tamanho da tela de visualização */
+/* classe main-login para dar atribuições a div main, onde se encontra todas divs */
+/* display, para organizar o conteúdo da div, flex deixa as divs uma do lado da outra */
+/* justify-content, para centralizar objetos no eixo x, center : para centralizar no eixo x */
+/* para justificar item no centro do eixo y */
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/fundo-espaco.jpg);
+    background-size: 100%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+/* flex-dirextion: column para colocar um item em baixo do outro, mesmo tendo atribuido flex ao display */
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* chamando a tag h1 dentro da classe left-login */
+.left-login > h1 {
+    color: #A1A69C;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* a % pega o tamanho da div em que está o card */
+/* height é automático */
+/* padding que atribui o tamanho interno da margem de uma div, o primeiro valor é o tamanho do eixo y, e o segundo para o eixo x */
+/* cor da borda do card */
+/* border-radius muda estilo da curva da borda */
+/* box-shadow cor da sombra: o terceiro valor é o valor é o blur*/
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #1A1E26;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #343A40;
+}
+
+/* font-weight é a grossura da fonte */
+.card-login > h1 {
+    color: #A1A69C;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+/* outline para editar a caixa do input, none para tirar borda da caixa */
+/* border-sizing para que o input fique dentro do padding */
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #6E7371;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #343A40;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: #A1A69C;
+    margin-bottom: 10px;   
+}
+
+/* para chamar o placeholder */
+.textfield > input::placeholder{
+    color: #08090D;
+}
+
+/* text-transform para editar o texto, uppercase para deixar tudo maiúsculo */
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #1A1E26;
+    background-color: #A1A69C;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #6E7371;
+}
+
+.btn-login:hover{
+    background-color: #d2d6cf;
+    padding: 20px 0px;
+}

@@ -1,6 +1,15 @@
 # projetofinalgame
 Projeto final da primeira fase de ADS
 
+<<<<<<< HEAD
+  Paginas html
+    
+    index/inicial = aonde vai aparece toda vez que abrir a pagina
+    erro404 = caso nao encontre a pagina
+    pagina de cadastro = para cadastrar o cliente
+    login = pagina de login
+    pagina do jogo = aonde vai ficar o jogo formato largura 800 e altura 600
+=======
 1°
 <!-- Criar uma build e colocar uma porta 8080 para integrar na web -->
 <!-- Testar se esta rodando na web -->
@@ -24,3 +33,4 @@ Adicionar apps no django
 
 4°
 Criar banco de dados integrado com django
+>>>>>>> c441b8be0095606f07ed72c4d9ae0962b97c74e8
