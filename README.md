@@ -34,6 +34,7 @@ Projeto final da primeira fase de ADS
 <!-- Criar banco de dados integrado com django -->
 <!-- Comunicando o banco de dados com o servidor django -->
 <!-- Branchs apagadas alisson e davi-->
+<!-- Branch criada novamente -->
 <!-- Criada a branch DevAmeglee -->
 <!-- Criada a branch DevDaviii -->
 5°
