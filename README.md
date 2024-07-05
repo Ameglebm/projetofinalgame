@@ -48,3 +48,5 @@ criar uma chave estrangeira para quando adicionar as informações no cadastro j
 Criar uma chave estrangeira do nome do usuario + senha, se coincidir com a senha que esta no cadastro pode logar.
 Após logar irá para pagina principal aonde vai ser o index.
 Criar uma chave de criptografia para hexadecial(acho que é esse nome)
+
+oi
