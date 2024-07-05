@@ -1,0 +1,19 @@
+main{
+    display: flex;
+}
+
+#sobre-nos{
+    width: 50%;
+    margin-right: 20%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#contatos{
+    width: 30%;
+    margin-top: 50px;
+}
+
+.texto{
+    margin-top: 2%;
+}
