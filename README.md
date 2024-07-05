@@ -50,4 +50,4 @@ Criar uma chave estrangeira do nome do usuario + senha, se coincidir com a senha
 Após logar irá para pagina principal aonde vai ser o index.
 Criar uma chave de criptografia para hexadecial(acho que é esse nome)
 
-oi
+oi oi
