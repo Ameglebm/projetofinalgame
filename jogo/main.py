@@ -12,7 +12,7 @@ lista = ["amar", "azul", "acordado", "amargura", "assistir", "apetecer", "ascend
     "bondade", "bola", "bajulador", "belo", "brasil", "bolo", "burrice", "bobo", "bruços", 
     "bônus", "biodiversidade", "cultura", "confiança", "como", "conserto", "circunstância", 
     "caos", "consequência", "casual", "cinismo", "cético", "conveniência", "compaixão", 
-    "consonância", "cordial", "compartilhar", "complexo", "céu", "clichê", "critério", 
+    "consonância", "compartilhar", "complexo", "céu", "clichê", "critério", 
     "coragem", "consoante", "carência", "canalha", "coerente", "custódia", "colapso", "casa", 
     "caridade", "conhecer", "complexidade", "conforme", "descobrir", "defasagem", "desalento", 
     "diplomata", "democrata", "divertido", "destituir", "dezesseis", "discordar", "distraído", 
@@ -29,7 +29,7 @@ lista = ["amar", "azul", "acordado", "amargura", "assistir", "apetecer", "ascend
     "gelificante", "geba", "gesticulação", "gelar", "germinal", "geomorfológico", "geminação", 
     "geotermômetro", "gertrudes", "geologicamente", "georreferenciar", "geniculado", "gerontológico", 
     "gemar", "genialmente", "geminípara", "gengibirra", "honorário", "hidrópico", "herético", 
-    "hiato", "haja", "honorários", "honrar", "higiene", "heterodoxo", "hígido", "herança", 
+    "hiato", "haja", "honorários", "honrar", "higiene", "cordial", "heterodoxo", "hígido", "herança", 
     "homeostase", "higienizar", "horrível", "heteronomia", "humanização", "habitat", "homeopático", 
     "hospício", "hansa", "herdar", "hibridismo", "hotel", "honroso", "hereditariedade", "hilariante", 
     "honorável", "hostilizado", "homizio", "hiância", "imanente", "insípido", "indiferença", 
@@ -89,7 +89,7 @@ lista = ["amar", "azul", "acordado", "amargura", "assistir", "apetecer", "ascend
     "verídico", "vermelho", "verão", "vestido", "vexatório", "viabilidade", "xadrez", "xale", "xangô", 
     "xará", "xarope", "xeque", "xícara", "xiita", "xilogravura", "xodó", "xoxo", "xote", "xuxa", 
     "xícara", "xaxim", "xênon", "xerife", "xerox", "xexéu", "xará", "xadrezista", "xamã", "xamânico", 
-    "xanadu", "xará", "xará", "xávega", "xavante", "xeque-mate", "xenofobia", "xereca", "xerox", 
+    "xanadu", "xará", "xará", "xávega", "xavante", "xenofobia", "xereca", "xerox", 
     "xicara", "xilogravura", "xilofone", "xiririca", "xixi", "xodó", "xucro", "xuxu", "zoada", "zombar", 
     "zoológico", "zoom", "zoonomia", "zoomorfismo", "zorra", "zulu", "zumbido", "zumbi", "zumbir", "zuílo", "zulu", "zumbi", "zunir", "zunzum", "zunzunzum", "zuízo", "zúrico", "zuzum", "zíper", "zózimo", "zuísmo", "zuíz", "zóxis", "zuízo", "zíper", "zoada", "zoa", "zoada", "zoada", "zoada", "zoada", "zoada", "zoada"]
 
