@@ -20,7 +20,6 @@ var/
 wheels/
 share/python-wheels/
 *.egg-info/
-.installed.cfg
 *.egg
 
 # PyInstaller
@@ -62,7 +61,6 @@ instance/
 .scrapy
 
 # Sphinx documentation
-docs/_build/
 
 # PyBuilder
 .pybuilder/
@@ -124,7 +122,6 @@ celerybeat.pid
 .ropeproject
 
 # mkdocs documentation
-/site
 
 # mypy
 .mypy_cache/
