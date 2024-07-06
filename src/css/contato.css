@@ -1,0 +1,69 @@
+body{
+    background-image: url(/src/imagens/fundo-contato.jpg);
+    background-size: 400vh;
+}
+main{
+    display: flex;
+    color: var(--branco);
+}
+
+#sobre-nos{
+    width: 50%;
+    margin-right: 20%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.titulo{
+    margin-top: 40px;
+    font-size: 1.7em;
+}
+
+#contatos-titulo{
+    width: 30%;
+    margin-top: 50px;
+}
+#contatos{
+    margin-top: 20px;
+    padding: 0;
+}
+
+.texto{
+    margin-top: 2%;
+    font-weight: 300;
+}
+
+strong{
+    font-weight: 700;
+}
+
+.desenvolvedores{
+    font-weight: 600;
+    list-style: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.icone-linkedin{
+    width: 1.5em;
+    height: 1.5em;
+}
+.icone-GitHub{
+    width: 1.7em;
+    height: 1.7em;
+}
+
+.link-linkedin{
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(0, 183, 255);
+}
+
+.link-linkedin:hover{
+    color: rgb(122, 228, 255);
+}
+

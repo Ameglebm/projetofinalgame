@@ -34,6 +34,7 @@ Projeto final da primeira fase de ADS
 <!-- Criar banco de dados integrado com django -->
 <!-- Comunicando o banco de dados com o servidor django -->
 <!-- Branchs apagadas alisson e davi-->
+<!-- Branch criada novamente -->
 <!-- Criada a branch DevAmeglee -->
 <!-- Criada a branch DevDaviii -->
 <!-- Criada nova branch DevDavi -->
@@ -49,3 +50,5 @@ criar uma chave estrangeira para quando adicionar as informações no cadastro j
 Criar uma chave estrangeira do nome do usuario + senha, se coincidir com a senha que esta no cadastro pode logar.
 Após logar irá para pagina principal aonde vai ser o index.
 Criar uma chave de criptografia para hexadecial(acho que é esse nome)
+
+oi oi
