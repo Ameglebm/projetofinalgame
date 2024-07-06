@@ -1,6 +1,6 @@
 main{
     height: 95vh;
-    background-image: url(../imagens/fundo-espaco.jpg);
+    background-image: url(/game_logs/static/images/fundo-espaco.jpg);
     background-size: 100%;
     display: flex;
     justify-content: center;

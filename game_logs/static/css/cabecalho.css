@@ -1,4 +1,4 @@
-@import url(/src/css/variaveis.css);
+@import url(/game_logs/static/css/variaveis.css);
 body{
     font-family: "Montserrat", sans-serif;
     background-color: var(--cinza-pastel-claro);

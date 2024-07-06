@@ -60,7 +60,7 @@ body {
 .main-login{
     width: 100vw;
     height: 100vh;
-    background-image: url(../images/fundo-espaco.jpg);
+    background-image: url(/game_logs/static/images/fundo-espaco.jpg);
     background-size: 100%;
     display: flex;    
     justify-content: center;
