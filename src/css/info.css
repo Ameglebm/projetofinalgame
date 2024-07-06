@@ -1,0 +1,91 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-size: 100%;
+    background-image: url(../imagens/fundo-espaco.jpg)
+    
+}
+
+.container-nav{
+    background-color: #08090D;
+    display: flex;
+    justify-content: space-between;
+    height: 3.5em;
+    font-weight: 500;
+}
+
+.navbar-more{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-link{
+    color: #F7F2ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.navbar-link:hover{
+    background-color: #F7F2ED;
+    color: #08090D;
+}
+
+.navbar-play{   
+    width: 20%;  
+}
+
+.navbar-button{
+    color: #F7F2ED;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-button:hover{
+    background-color: #F7F2ED;
+    color: #08090D;
+}
+
+.card{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.m-3{
+    font-weight: 800;
+    font-size: 30pt;
+    color: #A1A69C;
+}
+
+.col-md-3 > h5{
+    font-weight: 800;
+    font-size: 20pt;
+    color: #cecdcd;
+}
+
+.col-md-9{
+    font-weight: 800;
+    font-size: 15pt;
+    color:  #8b8b8b; 
+}
+
+.btn{
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
