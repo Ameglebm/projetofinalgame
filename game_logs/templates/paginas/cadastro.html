@@ -30,14 +30,15 @@
         </div>
         <div class="right-login">
         <div class="card-login"> <!--(CARD)-->
+            <form action="{% %}" method="post">
             <h1>CADASTRO</h1>
             <div class="textfield"> <!--div para englobar a label e o input-->
                 <label for="usuario">Nome Completo</label>
-                <input type="text" name="usuario" placeholder="Nome"><!--div para receber o nome do usuario -->
+                <input type="text" name="nome" placeholder="Nome"><!--div para receber o nome do usuario -->
             </div>
             <div class="textfield"> 
                 <label for="usuario">E-mail</label>
-                <input type="email" name="usuario" placeholder="e-mail">
+                <input type="email" name="email" placeholder="e-mail">
             </div>
             <div class="textfield"> 
                 <label for="usuario">Usuário</label>
@@ -52,6 +53,7 @@
                 <input type="password" name="senha" placeholder="Senha">
             </div>
             <button class="btn-login btn">CADASTRAR</button>
+        </form>
             <p>Já fez seu cadastro? <span><a href="{% url 'login' %}">Agora faça seu login</a></span></p>
         </div>
     </div>       
