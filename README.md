@@ -52,3 +52,13 @@ Após logar irá para pagina principal aonde vai ser o index.
 Criar uma chave de criptografia para hexadecial(acho que é esse nome)
 
 oi oi
+
+pagina login OK
+index        OK
+contato      OK
+cadastro     OK
+play         OK (navbar)
+info         OK (navbar)
+editar       OK (navbar)
+erro         OK
+

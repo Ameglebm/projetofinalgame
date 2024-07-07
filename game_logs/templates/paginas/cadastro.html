@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
+    <link rel="stylesheet" href="{% static 'css/variaveis.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
@@ -13,13 +14,13 @@
 <body>
     <nav class="container-nav">
         <div class="navbar-play">
-            <a class="navbar-button" href="#">CADASTRO</a>
+            <a class="navbar-button" href="{% url 'login' %}">LOGIN</a>
         </div>
         <div class="navbar-more">
-            <a class="navbar-link" href="/">PAGINA INICIAL</a>
+            <a class="navbar-link" href="{% url 'home' %}">PAGINA INICIAL</a>
             <a class="navbar-link" href="#">CLASSIFICAÇÃO</a>
             <a class="navbar-link" href="#">INFORMAÇÕES PESSOAIS</a>
-            <a class="navbar-link" href="#">CONTATO</a>
+            <a class="navbar-link" href="{% url 'contato' %}">CONTATO</a>
         </div>
     </nav>
 
@@ -51,7 +52,7 @@
                 <input type="password" name="senha" placeholder="Senha">
             </div>
             <button class="btn-login btn">CADASTRAR</button>
-            <p>Já fez seu cadastro? <span><a href="../html/login.html">Agora faça seu login</a></span></p>
+            <p>Já fez seu cadastro? <span><a href="{% url 'login' %}">Agora faça seu login</a></span></p>
         </div>
     </div>       
 </body>

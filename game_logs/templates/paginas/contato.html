@@ -18,13 +18,13 @@
   <body>
     <nav class="container-nav">
         <div class="navbar-play">
-            <a class="navbar-button" href="/src/html/login.html">LOGIN</a>
+            <a class="navbar-button" href="{% url 'login' %}">LOGIN</a>
         </div>
         <div class="navbar-more">
-            <a class="navbar-link" href="/src/html/index.html">PAGINA INICIAL</a>
+            <a class="navbar-link" href="{% url 'home' %}">PAGINA INICIAL</a>
             <a class="navbar-link" href="#">CLASSIFICAÇÃO</a>
-            <a class="navbar-link" href="/src/html/info.html">INFORMAÇÕES PESSOAIS</a>
-            <a class="navbar-link" href="/src/html/contato.html">CONTATO</a>
+            <a class="navbar-link" href="#">INFORMAÇÕES PESSOAIS</a>
+            <a class="navbar-link" href="{% url 'contato'%}">CONTATO</a>
         </div>
     </nav>
     <main>
@@ -48,26 +48,26 @@
           <li class="desenvolvedores">Alisson Amegle</li>
           <p class="dev-texto">Desenvolvedor Back-end</p>
           <div class="container-links-contatos">
-          <a href="https://www.linkedin.com/in/alisson-amegle-0063aa300/" class="link-linkedin"><img src="/src/imagens/linkedin.png" class="icone-linkedin" alt="icone linkedin">Linkedin</a>
-          <a href="https://github.com/Ameglebm" class="link-linkedin "><img src="/src/imagens/github.png" class="icone-GitHub" alt="icone GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/alisson-amegle-0063aa300/" class="link-linkedin"><img src="{% static 'images/linkedin.png' %}" class="icone-linkedin" alt="icone linkedin">Linkedin</a>
+          <a href="https://github.com/Ameglebm" class="link-linkedin "><img src="{% static 'images/github.png' %}" class="icone-GitHub" alt="icone GitHub">GitHub</a>
           </div>
           <li class="desenvolvedores">Mateus Duarte</li>
           <p class="dev-texto">Desenvolvedor Front-end</p>
           <div class="container-links-contatos">
-          <a href="https://www.linkedin.com/in/mateus-duarte-a9970926a/" class="link-linkedin"><img src="/src/imagens/linkedin.png" class="icone-linkedin" alt="icone linkedin">Linkedin</a>
-          <a href="https://github.com/mMateusDSouza" class="link-linkedin "><img src="/src/imagens/github.png" class="icone-GitHub" alt="icone GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/mateus-duarte-a9970926a/" class="link-linkedin"><img src="{% static 'images/linkedin.png' %}" class="icone-linkedin" alt="icone linkedin">Linkedin</a>
+          <a href="https://github.com/mMateusDSouza" class="link-linkedin "><img src="{% static 'images/github.png' %}" class="icone-GitHub" alt="icone GitHub">GitHub</a>
           </div>
           <li class="desenvolvedores">Davi Oliveira</li>
           <p class="dev-texto">Desenvolvedor Front-end</p>
           <div class="container-links-contatos">
-          <a href="https://www.linkedin.com/in/davi-de-oliveira-rosa-2224aa284/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link-linkedin"><img src="/src/imagens/linkedin.png" class="icone-linkedin" alt="icone linkedin">Linkedin</a>
-          <a href="https://github.com/Davi0liveiraa" class="link-linkedin "><img src="/src/imagens/github.png" class="icone-GitHub" alt="icone GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/davi-de-oliveira-rosa-2224aa284/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link-linkedin"><img src="{% static 'images/linkedin.png' %}" class="icone-linkedin" alt="icone linkedin">Linkedin</a>
+          <a href="https://github.com/Davi0liveiraa" class="link-linkedin "><img src="{% static 'images/github.png' %}" class="icone-GitHub" alt="icone GitHub">GitHub</a>
           </div>
           <li class="desenvolvedores">Yasmin Kibaltchich</li>
           <p class="dev-texto">Desenvovedora Back-end</p>
           <div class="container-links-contatos">
-          <a href="https://www.linkedin.com/in/yasminkibaltchich/" class="link-linkedin"><img src="/src/imagens/linkedin.png" class="icone-linkedin" alt="icone linkedin">Linkedin</a>
-          <a href="https://github.com/Yasmin-Kibaltchich" class="link-linkedin "><img src="/src/imagens/github.png" class="icone-GitHub" alt="icone GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/yasminkibaltchich/" class="link-linkedin"><img src="{% static 'images/linkedin.png' %}" class="icone-linkedin" alt="icone linkedin">Linkedin</a>
+          <a href="https://github.com/Yasmin-Kibaltchich" class="link-linkedin "><img src="{% static 'images/github.png' %}" class="icone-GitHub" alt="icone GitHub">GitHub</a>
           </div>
         </ul>
       </div>
