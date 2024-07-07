@@ -14,13 +14,13 @@
 <body>
     <nav class="container-nav">
         <div class="navbar-play">
-            <a class="navbar-button" href="#">LOGIN</a>
+            <a class="navbar-button" href="{% url 'login' %}">LOGIN</a>
         </div>
         <div class="navbar-more">
-            <a class="navbar-link" href="../html/index.html">PAGINA INICIAL</a>
+            <a class="navbar-link" href="{% url 'home' %}">PAGINA INICIAL</a>
             <a class="navbar-link" href="#">CLASSIFICAÇÃO</a>
             <a class="navbar-link" href="#">INFORMAÇÕES PESSOAIS</a>
-            <a class="navbar-link" href="#">CONTATO</a>
+            <a class="navbar-link" href="{% url 'contato'%}">CONTATO</a>
         </div>
     </nav>
    
@@ -40,7 +40,7 @@
                 <input type="password" name="senha" placeholder="Senha">
             </div>
             <button class="btn-login">Login</button>
-            <p>Não tem conta? <span><a href="../html/cadastro.html">Faça seu cadastro!</a></span></p>
+            <p>Não tem conta? <span><a href="{% url 'cadastro' %}">Faça seu cadastro!</a></span></p>
         </div>
     </div>        
         

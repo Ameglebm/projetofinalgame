@@ -30,13 +30,13 @@
   <body>
     <nav class="container-nav">
         <div class="navbar-play">
-            <a class="navbar-button" href="#">LOGIN</a>
+            <a class="navbar-button" href="{% url 'login' %}">LOGIN</a>
         </div>
         <div class="navbar-more">
-            <a class="navbar-link" href="/src/html/index.html">PAGINA INICIAL</a>
+            <a class="navbar-link" href="{% url 'home' %}">PAGINA INICIAL</a>
             <a class="navbar-link" href="#">CLASSIFICAÇÃO</a>
             <a class="navbar-link" href="#">INFORMAÇÕES PESSOAIS</a>
-            <a class="navbar-link" href="/src/html/contato.html">CONTATO</a>
+            <a class="navbar-link" href="{% url 'contato' %}">CONTATO</a>
         </div>
     </nav>
     <main>

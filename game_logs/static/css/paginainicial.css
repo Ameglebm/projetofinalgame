@@ -1,6 +1,6 @@
-@import url(./paginainicial.css);
+@import url(/static/css/variaveis.css);
 main{
-    background-image: url(../images/fundo-espaco.jpg);
+    background-image: url(/static/images/fundo-espaco.jpg);
     background-size: 100% 100%;
 }
 .container-principal{
