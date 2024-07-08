@@ -31,7 +31,7 @@
         <div class="right-login">
         <div class="card-login"> <!--(CARD)-->
             <h1>CADASTRO</h1>
-            <form action="{% url 'cadastre' %}" method="POST">
+            <form action="{% url 'cadastre' %}" class="formulario" method="POST">
                 {% csrf_token %}
             <div class="textfield"> <!--div para englobar a label e o input-->
                 <label for="usuario">Nome Completo</label>

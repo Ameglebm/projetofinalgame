@@ -106,6 +106,7 @@ body {
     background: #1A1E26;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #343A40;
+    margin-top: 2em;
 }
 
 /* font-weight é a grossura da fonte */
@@ -169,4 +170,10 @@ body {
 .btn:hover{
     background-color: #d2d6cf;
     padding: 20px 0px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
