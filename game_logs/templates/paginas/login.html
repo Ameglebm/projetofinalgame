@@ -31,6 +31,8 @@
         <div class="right-login">
         <div class="card-login"> <!--(CARD)-->
             <h1>LOGIN</h1>
+            <form action="{% url 'login' %}" method='POST'>
+                {% csrf_token %}
             <div class="textfield"> <!--div para englobar a label e o input-->
                 <label for="usuario">Usuário</label>
                 <input type="text" name="usuario" placeholder="Usuário"><!--div para receber o nome do usuario -->
@@ -40,7 +42,8 @@
                 <input type="password" name="senha" placeholder="Senha">
             </div>
             <button class="btn-login">Login</button>
-            <p>Não tem conta? <span><a href="{% url 'cadastro' %}">Faça seu cadastro!</a></span></p>
+        </form>
+            <p>Não tem conta? <span><a href="{% url 'cadastre' %}">Faça seu cadastro!</a></span></p>
         </div>
     </div>        
         
