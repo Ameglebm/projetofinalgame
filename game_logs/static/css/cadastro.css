@@ -154,7 +154,7 @@ body {
 .btn-login{
     width: 100%;
     padding: 16px 0px;
-    margin: 25px;
+    margin: 25px 0px;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -165,6 +165,7 @@ body {
     background-color: #A1A69C;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #6E7371;
+
 }
 
 .btn:hover{
