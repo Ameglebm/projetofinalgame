@@ -36,6 +36,10 @@ def cadastre(request):
 def contato(request):
     return render(request, 'paginas/contato.html')
 
+@login_required(login_url="login")
+def play(request):
+    return render(request, 'paginas/play.html')
+
 def login(request):
     if request.method == 'GET':
         return render(request, 'paginas/login.html')
@@ -46,12 +50,11 @@ def login(request):
         user = authenticate(username=username, password=password)
         if user:
             login_django(request, user)
-
-            return HttpResponse('Autenticado')
+            return redirect('play')
         else:
             return HttpResponse('Email ou senha inválidos')
         
-@login_required(login_url="/login/")        
+@login_required(login_url="login")        
 def plataforma(request):
     return HttpResponse('plataforma')
 
