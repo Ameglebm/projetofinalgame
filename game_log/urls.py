@@ -9,5 +9,6 @@ urlpatterns = [
     path('contato/', views.contato, name='contato'),
     path('login/', views.login, name='login'),
     path('plataforma/', views.plataforma, name='plataforma'),
+    path('play', views.play, name='play'),
 ]
 
